@@ -1,41 +1,30 @@
 
-body, html {
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  height: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
 }
-
-.hero {
-  height: 100vh;
-  background-image: url('images/hero-drone.jpg'); /* existing image */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.hero-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 40px;
-  border-radius: 12px;
-  color: white;
+header {
+  background-color: #1f1f1f;
+  padding: 1em;
   text-align: center;
-  max-width: 700px;
 }
-
-.hero-overlay h1 {
-  font-size: 3em;
-  margin-bottom: 0.3em;
+nav a {
+  margin: 0 15px;
+  color: #90caf9;
+  text-decoration: none;
 }
-
-.hero-overlay h2 {
-  font-size: 2em;
-  margin-bottom: 0.5em;
+.hero {
+  text-align: center;
+  padding: 2em;
 }
-
-.hero-overlay p {
-  font-size: 1.2em;
+.hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+main {
+  padding: 2em;
 }
