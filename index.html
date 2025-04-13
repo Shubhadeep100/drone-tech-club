@@ -1,76 +1,92 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Drone Tech Club</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: white;
-      animation: fadeIn 1.5s ease;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-10px); }
-      to { opacity: 1; transform: translateY(0); }
+      animation: fadeIn 1s ease-in;
     }
     header {
+      background: rgba(0, 0, 0, 0.6);
       padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: rgba(0, 0, 0, 0.2);
-      backdrop-filter: blur(5px);
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
     }
-    .logo {
-      font-size: 24px;
-      font-weight: 600;
+    nav {
+      display: flex;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px;
     }
     nav a {
       color: white;
       text-decoration: none;
       margin: 0 15px;
-      font-weight: 500;
-      transition: color 0.3s;
+      font-weight: bold;
     }
-    nav a:hover {
-      color: #00c9ff;
+    .container {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
     }
-    .hero {
-      text-align: center;
-      padding: 100px 20px;
+    .section {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
     }
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
+    h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
     }
-    .hero p {
-      font-size: 20px;
-      color: #ddd;
-      max-width: 600px;
-      margin: 0 auto;
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
+  <header>Drone Technology Club</header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#announcements">Announcements</a>
+    <a href="#projects">Projects</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+  </nav>
 
-  <header>
-    <div class="logo">Drone Tech Club</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="#about">About</a>
-      <a href="login.html">Login</a>
-      <a href="register.html">Register</a>
-    </nav>
-  </header>
+  <div class="container">
+    <div class="section" id="announcements">
+      <h2>Latest Announcement</h2>
+      <p>
+        <strong>Congratulations, dear students!</strong><br />
+        You have successfully qualified for the Drone Training Program Phase-V 2025.<br />
+        Your training will begin on April 16, 2025 and will be conducted on April 16, 17, and 19, 2025.<br />
+        <strong>Note:</strong> Attendance on all three days is mandatory.
+      </p>
+    </div>
 
-  <section class="hero">
-    <h1>Welcome to Drone Tech Club</h1>
-    <p>Pushing boundaries of aerial innovation. Stay tuned for announcements, projects, and member access!</p>
-  </section>
+    <div class="section" id="projects">
+      <h2>Ongoing Projects</h2>
+      <ul>
+        <li>Obstacle Avoidance Drone</li>
+        <li>Surveillance Quadcopter</li>
+        <li>Autonomous Delivery Drone</li>
+      </ul>
+    </div>
 
+    <div class="section">
+      <h2>Achievements</h2>
+      <p>Winners of the National Drone Racing League 2024 | Featured in TechFest IIT Bombay 2023</p>
+    </div>
+  </div>
 </body>
 </html>
