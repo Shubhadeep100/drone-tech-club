@@ -1,24 +1,74 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Register - Drone Tech Club</title>
-  <script type="module" src="register.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Registration</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      font-family: Arial, sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(8.5px);
+      width: 300px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #00c6ff;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-  <h2>Student Registration</h2>
-  <form id="registerForm">
-    <input type="text" placeholder="Name" id="name" required><br>
-    <input type="text" placeholder="Roll Number" id="roll" required><br>
-    <input type="text" placeholder="Reg. Number" id="reg" required><br>
-    <input type="text" placeholder="Branch" id="branch" required><br>
-    <input type="text" placeholder="Semester" id="sem" required><br>
-    <input type="email" placeholder="Email" id="email" required><br>
-    <input type="text" placeholder="Phone Number" id="phone" required><br>
-    <input type="text" placeholder="WhatsApp Number" id="whatsapp" required><br>
-    <input type="password" placeholder="Password" id="password" required><br>
-    <button type="submit">Register</button>
-  </form>
-  <p id="status"></p>
+  <div class="container">
+    <h2>Student Registration</h2>
+    <form id="registerForm">
+      <input type="text" placeholder="Name" id="name" required />
+      <input type="text" placeholder="Roll Number" id="roll" required />
+      <input type="text" placeholder="Branch" id="branch" required />
+      <input type="text" placeholder="Semester" id="semester" required />
+      <input type="text" placeholder="Address" id="address" required />
+      <input type="text" placeholder="Registration Number" id="regno" required />
+      <input type="email" placeholder="Email" id="email" required />
+      <input type="tel" placeholder="Phone Number" id="phone" required />
+      <input type="tel" placeholder="WhatsApp Number" id="whatsapp" required />
+      <input type="password" placeholder="Password" id="password" required />
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  <script type="module" src="register.js"></script>
 </body>
 </html>
